@@ -1,0 +1,12 @@
+  
+{% extends "base.html" %}
+{% block content %}
+{% if user.is_authenticated %}
+	<h1>Get started</h1>
+	<h2>Add your pet</h2>
+	<h2>Book an appointment</h2>
+{% else %}
+ 	<h1>Log in</h1>
+{% endif %}
+
+{% endblock %}
